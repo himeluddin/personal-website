@@ -1,0 +1,97 @@
+html, body {
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+#title-heading {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#h-button {
+    --rotation: -5deg;
+}
+#i-button {
+    --rotation: 8deg;
+}
+#m-button {
+    --rotation: -13deg;
+}
+#e-button {
+    --rotation: 21deg;
+}
+#l-button {
+    --rotation: -34deg;
+}
+
+.name-heading {
+    display: flex;
+
+}
+
+.name-heading input {
+    height: auto;
+    width: 100%;
+}
+
+.title-header, .text-body {
+    padding: 1em;
+    margin-left: 5rem;
+}
+
+.key-img {
+
+    /*Fib rotation*/
+    --rotation: 0deg;
+    transform: rotate(var(--rotation));
+    transition: transform 0.1s ease;
+
+    /*Filters*/
+    filter: contrast(1.2);
+}
+
+.key-img:hover {
+    transform: rotate(var(--rotation)) translateY(2px) scale(0.98);
+}
+
+.key-img:active {
+    transform: rotate(var(--rotation)) translateY(10px) scale(0.98);
+}
+
+.footer-component {
+    margin-top: auto;
+
+}
+
+.connection-links {
+    text-align: right;
+}
+
