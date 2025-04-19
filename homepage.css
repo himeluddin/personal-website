@@ -32,9 +32,10 @@ h3 {
 
 #title-heading {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
 }
+
 
 #h-button {
     --rotation: -5deg;
@@ -68,6 +69,9 @@ h3 {
 }
 
 .key-img {
+
+    height: 128px;
+    width: 128px;
 
     /*Fib rotation*/
     --rotation: 0deg;
